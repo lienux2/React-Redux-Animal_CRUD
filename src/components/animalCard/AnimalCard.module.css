@@ -1,40 +1,65 @@
 .cardsContainer {
-    gap: 50px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    justify-content: center;
-}
-
-.cardsContainerNoData {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 30px;
-    margin: 0 50px;
+  gap: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
 }
 
 .cardWrapper {
-    box-shadow: 1px 1px 10px #2b0202;
-    gap: 20px;
-    padding: 10px;
-    max-width: 100%;
-    margin: 10px 0;
+  box-shadow: 1px 1px 10px #2b0202;
+  gap: 20px;
+  padding: 10px;
+  max-width: 100%;
+  margin: 10px 0;
 }
 
 .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.editable {
-    border: 1px solid black;
-    background-color: aquamarine;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
-    width: 250px;
+  width: 250px;
+}
+
+@media (max-width: 2100px) {
+  .image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .cardsContainer {
+    grid-template-columns: 25% 25% 25%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cardsContainer {
+    grid-template-columns: 30% 30%;
+  }
+  .image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    grid-template-columns: 80%;
+  }
+  .image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardsContainer {
+    gap: 25px;
+  }
+  .image {
+    width: 100px;
+  }
 }

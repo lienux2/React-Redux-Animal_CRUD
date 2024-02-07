@@ -1,44 +1,101 @@
-.form {
-    box-shadow: 1px 1px 10px #2b0202;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .formContainer {
-    gap: 50px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 75vh;
 }
 
-.input {
-    display: flex;
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  box-shadow: 1px 1px 10px #2b0202;
+  padding: 50px 100px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading {
+  margin: 20px;
+  text-align: center;
+}
+
+.imagePreview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 500px;
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  width: 500px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .form {
     flex-direction: column;
-    gap: 10px;
+  }
+  .formContainer {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
-label {
-    float: left;
+@media (max-width: 750px) {
+  .imagePreview {
+    width: 400px;
+    border-radius: 15px;
+  }
+  .image {
+    width: 400px;
+    border-radius: 15px;
+  }
+  .form {
+    gap: 30px;
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .imagePreview {
+    width: 400px;
+    border-radius: 15px;
+  }
+  .image {
+    width: 400px;
+    border-radius: 15px;
+  }
+  .form {
+    gap: 30px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .imagePreview,
+  .image {
     width: 250px;
-    margin: 5px 0;
-}
-
-.centerInputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-input {
-    width: 250px;
-    height: 30px;
-    border: none;
-    background-color: rgba(223, 218, 218, 0.295);
-    box-shadow: 1px 1px 10px #d3d0d0;
-    border-radius: 4px;
+  }
+  .form {
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  .heading {
+    max-width: 100px;
+    text-wrap: wrap;
+  }
 }

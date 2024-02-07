@@ -1,0 +1,49 @@
+.button {
+  border: transparent;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: lightcyan;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.sort {
+  background-color: #8f8f8f;
+  font-size: 25px;
+}
+
+.edit {
+  background-color: #296fa8;
+}
+
+.delete {
+  background-color: #b43a3a;
+}
+
+.add {
+  background-color: #269b56;
+}
+
+.cancel {
+  background-color: yellow;
+  color: black;
+}
+
+.save {
+  background-color: darkgreen;
+}
+
+@media (max-width: 500px) {
+  .button {
+    border: transparent;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}

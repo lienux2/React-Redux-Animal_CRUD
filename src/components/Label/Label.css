@@ -1,0 +1,13 @@
+.label {
+  float: left;
+  width: 300px;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+@media (max-width: 470px) {
+  .label {
+    width: 200px;
+    font-size: 15px;
+  }
+}
